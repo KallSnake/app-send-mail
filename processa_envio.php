@@ -101,13 +101,13 @@ try {
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'ksnakedeveloper@gmail.com';        // SMTP username // SEU E-MAIL
-    $mail->Password = 'kbrunswicki';                      // SMTP password
+    $mail->Username = 'email@usuario.com';        // SMTP username // SEU E-MAIL
+    $mail->Password = '0000';                      // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to // 587 for Gmail | 25 for Hotmail
 
     //Recipients
-    $mail->setFrom('ksnakedeveloper@gmail.com', 'App Send Mail');                 // Remetente
+    $mail->setFrom('email@usuario.com', 'App Send Mail');                 // Remetente
     $mail->addAddress($mensagem->__get("para"));                                  // Add a recipient // Destinatario
     // $mail->addAddress('email.destinatario@gmail.com', 'Nome Destinatario');    // Name is optional // Adicionar + destinatario
     // $mail->addReplyTo('info@example.com', 'Information');      // Caso tenha uma terceira pessoa para enviar o e-mail do(addAddress)
